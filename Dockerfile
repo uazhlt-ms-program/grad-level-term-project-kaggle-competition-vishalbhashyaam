@@ -12,8 +12,15 @@ RUN pip install -U pytorch-lightning \
     notebook==6.4.6 \
     jupyter-client==7.1.2 \
     jupyter-contrib-nbextensions==0.5.1 \
-    && jupyter contrib nbextension install --user
-    
+    && jupyter contrib nbextension install --user \
+    && pip install numpy==1.19.5 \
+    scipy==1.7.3 \
+    scikit-learn==0.24.2 \
+    matplotlib==3.4.3 \
+    pandas==1.3.4 \
+    seaborn==0.11.2 \
+    plotly==5.5.0 \
+    tqdm==4.62.3
 
 # copy executables to path
 COPY . ./
